@@ -294,7 +294,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-
     @media (max-width:991px) {
         padding-top: 15rem;
     }
@@ -308,7 +307,7 @@ h3 {
 
 .mondi_item {
     background-color: $color_GrigioScuro;
-    bottom: 60px;
+    bottom: 61px;
 }
 
 .vr {
@@ -390,5 +389,5 @@ h3 {
 
 .copyright_field {
     background-color: $color_lightGrey;
-    color: $color_darkGrey
+    color: $color_darkGrey;
 }
