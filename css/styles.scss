@@ -8,7 +8,7 @@ $color_GrigioScuro: #3D3D3C;
 $color_blue: #059EB2;
 $input-border-color: #3D3D3C;
 $color_lightGrey: #F2F2F2;
-$color_GrigioChiaro:#B5B7C3;
+$color_GrigioChiaro: #B5B7C3;
 
 @mixin make-container($paddingE, $paddingS, $marginE: auto, $marginS: auto) {
     width: 100%;
@@ -27,16 +27,24 @@ a {
     color: $color_GrigioScuro;
 }
 
-p{
+p {
     color: $color_GrigioScuro;
 }
 
 .navbar_container {
-    @include make-container(2.1rem, 5.3rem)
+    @include make-container(2.1rem, 5.3rem);
+
+    @media (max-width:767px) {
+        @include make-container(1rem, 1rem);
+    }
 }
 
 .main_body_container {
     @include make-container(5.6rem, 5.6rem);
+
+    @media (max-width:767px) {
+        @include make-container(1rem, 1rem, $marginE: auto, $marginS: auto);
+    }
 }
 
 .navbar {
@@ -259,8 +267,8 @@ h3 {
     color: $color_white;
 }
 
-.grey_font{
-    color:$color_GrigioChiaro;
+.grey_font {
+    color: $color_GrigioChiaro;
 }
 
 .white_border {
@@ -293,6 +301,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+
     @media (max-width:991px) {
         padding-top: 15rem;
     }
