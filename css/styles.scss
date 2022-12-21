@@ -10,7 +10,6 @@ $input-border-color: #3D3D3C;
 $color_lightGrey: #F2F2F2;
 $color_GrigioChiaro:#B5B7C3;
 
-
 @mixin make-container($paddingE, $paddingS, $marginE: auto, $marginS: auto) {
     width: 100%;
     padding-right: $paddingE;
